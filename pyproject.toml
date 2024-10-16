@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.poetry]
+name = "pyband"
+version = "1.0"
+description = "band plot using python matplotlib"
+authors = ["Qijing Zheng <zqj.kaka@gmail.com>"]
+homepage = "https://github.com/QijingZheng/VaspBandUnfolding"
+
+[tool.poetry.scripts]
+aseconv = "aseconv:main"
+energy_unit_conv = "energy_unit_conv:main"
+kut = "kut:main"
+molAdd = "molAdd:main"
+molDel = "molDel:main"
+nebplt = "nebplt:main"
+nose_mass = "nose_mass:main"
+plot_workfunc = "plot_workfunc:main"
+velInit = "velInit:main"
+xcell = "xcell:main"
+xtraj = "xtraj:main"
+npband = "npband:main"
+npdos = "npdos:main"
+pyband = "pyband:main"
+pydos = "pydos:main"
+pygap = "pygap:main"
+
+[tool.poetry.dependencies]
+python = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"

@@ -805,7 +805,7 @@ if __name__ == '__main__':
     if not opts.quiet:
         try:
             from subprocess import call
-            call(['feh', '-xdF', opts.bandimage])
+            call(['~/.iterm2/imgcat',  opts.bandimage])
         except:
             # do nothing if image view fails
             pass
